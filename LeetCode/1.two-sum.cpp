@@ -1,7 +1,7 @@
 /*
  * @Author: OBKoro1
  * @Date: 2025-11-26 23:34:37
- * @FilePath: \无标题 (工作区)d:\#Github Repo\LeetCode\1.two-sum.cpp
+ * @FilePath: \LeetCode\1.two-sum.cpp
  * @Description: 
  */
 /*
@@ -10,6 +10,7 @@
  * [1] Two Sum
  */
 
+/*
 // @lc code=start
 class Solution {
 public:
@@ -24,5 +25,23 @@ public:
         return {};
     }
 };
+// @lc code=end
+*/
+
+// @lc code=start
+class Solution {
+public:
+    vector<int> twoSum(vector<int>& nums, int target) {
+        unordered_map<int, int> hash;
+        for (int i = 0; i < nums.size(); i++) {
+            if (hash.find(target - nums[i] != hash.end())) {
+                return {hash[target - nums[i]], i};
+            }
+            hash[nums[i]] = i;
+        }
+        return {};
+    }
+};
+
 // @lc code=end
 
