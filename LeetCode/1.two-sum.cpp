@@ -1,7 +1,7 @@
 /*
  * @Author: OBKoro1
  * @Date: 2025-11-26 23:34:37
- * @FilePath: \LeetCode\1.two-sum.cpp
+ * @FilePath: \无标题 (工作区)d:\#Github Repo\LeetCode\1.two-sum.cpp
  * @Description: 
  */
 /*
